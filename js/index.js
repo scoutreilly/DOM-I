@@ -81,3 +81,4 @@ contact.querySelectorAll('p')[2].innerText = 'sales@greatidea.io';
 
 document.querySelector('footer p').innerText = 'Copyright Great Idea! 2018';
 
+headerNav.forEach(item => item.style.color = 'green');
