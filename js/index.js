@@ -81,4 +81,16 @@ contact.querySelectorAll('p')[2].innerText = 'sales@greatidea.io';
 
 document.querySelector('footer p').innerText = 'Copyright Great Idea! 2018';
 
-headerNav.forEach(item => item.style.color = 'green');
+var navItem = document.createElement("a");     
+var text = document.createTextNode("Gang");         
+navItem.appendChild(text);                              
+document.querySelector('header nav').appendChild(navItem);
+
+var navItem = document.createElement("a");     
+var text = document.createTextNode("Merch");         
+navItem.appendChild(text);                              
+document.querySelector('header nav').appendChild(navItem);
+document.querySelectorAll('nav a')[6].setAttribute('href', '#')
+document.querySelectorAll('nav a')[7].setAttribute('href', '#')
+
+document.querySelectorAll('header nav a').forEach(item => item.style.color = 'green');
